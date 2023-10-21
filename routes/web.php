@@ -20,3 +20,5 @@ Route::get('/', function () {
 
 // Contoh Route di Laravel 8
 // Route::get('/Home', [PageController::class, 'home']);
+
+Route::get('/home', [PageController::class, 'home']);
