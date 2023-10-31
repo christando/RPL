@@ -14,9 +14,9 @@ use App\Http\Controllers\PageController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 // Contoh Route di Laravel 8
 // Route::get('/Home', [PageController::class, 'home']);
