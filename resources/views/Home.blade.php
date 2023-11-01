@@ -41,67 +41,14 @@
                 <span>
                   LUNA
                 </span>
-              </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-    
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav  ">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html"> About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="work.html">Work </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="category.html"> Category </a>
-                  </li>
-                </ul>
-                <div class="user_option">
-                  <a href="">
-                    <span>
-                      Login
-                    </span>
-                  </a>
-                  <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                    <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-                  </form>
-                </div>
-              </div>
-              <div>
-                <div class="custom_menu-btn ">
-                  <button>
-                    <span class=" s-1">
-    
-                    </span>
-                    <span class="s-2">
-    
-                    </span>
-                    <span class="s-3">
-    
-                    </span>
-                  </button>
-                </div>
-              </div>
-    
+              </a>   
+              <div>   
             </nav>
           </div>
         </header>
         <!-- end header section -->
         <!-- slider section -->
         <section class="slider_section ">
-          <div class="carousel_btn-container">
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">01</li>
@@ -369,19 +316,6 @@
                     </h2>
                   </div>
                   <div class="tab_container">
-                    <div class="t-link-box" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      <div class="img-box">
-                        <img src="images/f1.png" alt="">
-                      </div>
-                      <div class="detail-box">
-                        <h5>
-                          $250 Million
-                        </h5>
-                        <h3>
-                          Paid to Freelancers
-                        </h3>
-                      </div>
-                    </div>
                     <div class="t-link-box collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                       <div class="img-box">
                         <img src="images/f2.png" alt="">
@@ -456,7 +390,7 @@
     
       <!-- client section -->
     
-      <section class="client_section layout_padding">
+      {{-- <section class="client_section layout_padding">
         <div class="container">
           <div class="row">
             <div class="col-lg-9 col-md-10 mx-auto">
@@ -511,7 +445,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> --}}
     
       <!-- end client section -->
     
@@ -526,7 +460,7 @@
               <div class="info_logo">
                 <img src="images/logo.png" alt="" />
                 <span>
-                  Spering
+                  LUNA
                 </span>
               </div>
               <div class="social_box">

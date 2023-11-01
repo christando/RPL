@@ -524,6 +524,8 @@ body {
   }
   
   .freelance_section .row {
+	background-color: #1cbbb4;
+	padding: 80px 45px;
 	-webkit-box-align: center;
 		-ms-flex-align: center;
 			align-items: center;
@@ -538,6 +540,7 @@ body {
 		-ms-flex-align: center;
 			align-items: center;
 	cursor: pointer;
+
   }
   
   .freelance_section .tab_container .t-link-box .img-box {

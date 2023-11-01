@@ -22,3 +22,6 @@ use App\Http\Controllers\PageController;
 // Route::get('/Home', [PageController::class, 'home']);
 
 Route::get('/home', [PageController::class, 'home']);
+Route::get('/dashboard', [PageController::class, 'dashboard']);
+Route::get('/login', [PageController::class, 'login']);
+Route::get('/register', [PageController::class, 'register']);
