@@ -39,7 +39,7 @@
               <a class="navbar-brand" href="index.html">
                 <img src="{{ asset('images/logo.png') }}" alt=""/>
                 <span>
-                  LUNA
+                  LUNAaaaa
                 </span>
               </a>
               <div>
