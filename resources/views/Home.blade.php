@@ -6,7 +6,7 @@
 
     <!DOCTYPE html>
     <html>
-    
+
     <head>
       <!-- Basic -->
       <meta charset="utf-8" />
@@ -17,19 +17,19 @@
       <meta name="keywords" content="" />
       <meta name="description" content="" />
       <meta name="author" content="" />
-    
+
       <title>Spering</title>
-    
+
       <!-- bootstrap core css -->
       <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    
+
       <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
       <!-- Custom styles for this template -->
       <link href="css/style.css" rel="stylesheet" />
       <!-- responsive style -->
       <link href="css/responsive.css" rel="stylesheet" />
     </head>
-    
+
     <body>
       <div class="hero_area">
         <!-- header section strats -->
@@ -41,8 +41,8 @@
                 <span>
                   LUNA
                 </span>
-              </a>   
-              <div>   
+              </a>
+              <div>
             </nav>
           </div>
         </header>
@@ -71,10 +71,10 @@
                           the readable content of a page
                         </p>
                         <div class="btn-box">
-                          <a href="" class="btn-1">
+                          <a href="/login" class="btn-1">
                             Login
                           </a>
-                          <a href="" class="btn-2">
+                          <a href="/register" class="btn-2">
                             Register
                           </a>
                         </div>
@@ -153,16 +153,16 @@
                 </div>
               </div>
             </div>
-    
+
           </div>
-    
+
         </section>
         <!-- end slider section -->
       </div>
-    
-    
+
+
       <!-- experience section -->
-    
+
       <section class="experience_section layout_padding">
         <div class="container">
           <div class="row">
@@ -191,15 +191,15 @@
                 </div>
               </div>
             </div>
-    
+
           </div>
         </div>
       </section>
-    
+
       <!-- end experience section -->
-    
+
       <!-- category section -->
-    
+
       <section class="category_section layout_padding">
         <div class="container">
           <div class="heading_container">
@@ -271,12 +271,12 @@
           </div>
         </div>
       </section>
-    
-    
+
+
       <!-- end category section -->
-    
+
       <!-- about section -->
-    
+
       <section class="about_section layout_padding">
         <div class="container">
           <div class="row">
@@ -299,11 +299,11 @@
           </div>
         </div>
       </section>
-    
+
       <!-- end about section -->
-    
+
       <!-- freelance section -->
-    
+
       <section class="freelance_section ">
         <div id="accordion">
           <div class="container-fluid">
@@ -385,11 +385,11 @@
           </div>
         </div>
       </section>
-    
+
       <!-- end freelance section -->
-    
+
       <!-- client section -->
-    
+
       {{-- <section class="client_section layout_padding">
         <div class="container">
           <div class="row">
@@ -446,13 +446,13 @@
           </div>
         </div>
       </section> --}}
-    
+
       <!-- end client section -->
-    
-    
-    
+
+
+
       <!-- info section -->
-    
+
       <section class="info_section ">
         <div class="info_container layout_padding-top">
           <div class="container">
@@ -481,7 +481,7 @@
                 </a>
               </div>
             </div>
-    
+
             <div class="info_main">
               <div class="row">
                 <div class="col-md-3 col-lg-2">
@@ -513,7 +513,7 @@
                     Readable content of a page when looking at its layoutreadable content of a page when looking at its layout
                   </p>
                 </div>
-    
+
                 <div class="col-md-3 col-lg-2 offset-lg-1">
                   <h5>
                     Information
@@ -522,7 +522,7 @@
                     Readable content of a page when looking at its layoutreadable content of a page when looking at its layout
                   </p>
                 </div>
-    
+
                 <div class="col-md-3  offset-lg-1">
                   <div class="info_form ">
                     <h5>
@@ -582,13 +582,13 @@
                 </div>
               </div>
             </div>
-    
+
           </div>
         </div>
       </section>
-    
+
       <!-- end info section -->
-    
+
       <!-- footer section -->
       <footer class="container-fluid footer_section ">
         <div class="container">
@@ -599,15 +599,15 @@
         </div>
       </footer>
       <!-- end  footer section -->
-    
-    
+
+
       <script src="js/jquery-3.4.1.min.js"></script>
       <script src="js/bootstrap.js"></script>
       <script src="js/custom.js"></script>
-    
-    
+
+
     </body>
     </body>
-    
+
     </html>
 @endsection()

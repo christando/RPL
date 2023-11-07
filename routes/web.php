@@ -21,7 +21,7 @@ use App\Http\Controllers\PageController;
 // Contoh Route di Laravel 8
 // Route::get('/Home', [PageController::class, 'home']);
 
-Route::get('/home', [PageController::class, 'home']);
+Route::get('/', [PageController::class, 'home']);
 Route::get('/dashboard', [PageController::class, 'dashboard']);
 Route::get('/login', [PageController::class, 'login']);
 Route::get('/register', [PageController::class, 'register']);
