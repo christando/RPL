@@ -39,7 +39,7 @@
               <a class="navbar-brand" href="index.html">
                 <img src="{{ asset('images/logo.png') }}" alt=""/>
                 <span>
-                  LUNAaaaa
+                  LUNA
                 </span>
               </a>
               <div>
@@ -63,12 +63,11 @@
                       <div class="detail-box">
                         <h1>
                           You Can <br>
-                          Hire Freelancer <br>
+                          Manage Your Waste <br>
                           Here
                         </h1>
                         <p>
-                          It is a long established fact that a reader will be distracted by
-                          the readable content of a page
+                          A dedicated website for waste management in Yogyakarta
                         </p>
                         <div class="btn-box">
                           <a href="/login" class="btn-1">
