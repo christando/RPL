@@ -27,11 +27,14 @@ class authController extends Controller
         ];
         if(Auth::attempt($datalogin)){
             //hak akses
-            if(Auth::user()->role == 'peternak'){
-                return redirect('/dashboard/peternak');
+            if(Auth::user()->role == 'pemilik'){
+                return redirect('/dashboard/pemilik');
             } 
-            elseif(Auth::user()->role == 'pabrik'){
-                return redirect('/dashboard/pabrik');
+            elseif(Auth::user()->role == 'pengambil'){
+                return redirect('/dashboard/pengambil');
+            }
+            elseif(Auth::user()->role == 'bank'){
+                return redirect('/dashboard/bank');
             }
         }
         else{
