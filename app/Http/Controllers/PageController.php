@@ -18,9 +18,19 @@ class PageController extends Controller
     {
         return view("register");
     }
-    public function dashboard()
+    public function dashboardPengambil()
     {
         return view("dashboard_pengambil");
+    }
+    
+    public function dashboardPemilik()
+    {
+        return view("dashboard_pemilik");
+    }
+    
+    public function dashboardBank()
+    {
+        return view("dashboarad_bank");
     }
     
 }
