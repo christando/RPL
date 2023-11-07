@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 
 class authController extends Controller
 {
+
     // view
     public function login(){
         return view('login');
@@ -48,3 +49,7 @@ class authController extends Controller
         return redirect('/');
     }
 }
+
+
+}
+

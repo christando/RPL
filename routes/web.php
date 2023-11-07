@@ -16,8 +16,14 @@ use App\Http\Controllers\PageController;
 */
 
 
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 // Contoh Route di Laravel 8
 // Route::get('/Home', [PageController::class, 'home']);
+
 
 
 Route::middleware(['guest'])->group(function () {
@@ -40,5 +46,7 @@ Route::middleware(['auth'])->group(function () {
     
 });
 
-
+Route::group(['middleware'=>'prevent-back-history'],function(){
+    //Route
+});
 
