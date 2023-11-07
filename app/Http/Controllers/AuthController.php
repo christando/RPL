@@ -30,7 +30,7 @@ class authController extends Controller
             //hak akses
             if(Auth::user()->role == 'pemilik'){
                 return redirect('/dashboard/pemilik');
-            } 
+            }
             elseif(Auth::user()->role == 'pengambil'){
                 return redirect('/dashboard/pengambil');
             }
@@ -51,5 +51,4 @@ class authController extends Controller
 }
 
 
-}
 
