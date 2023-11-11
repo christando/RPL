@@ -36,13 +36,13 @@ Route::middleware(['guest'])->group(function () {
 
 Route::middleware(['auth'])->group(function () {
     Route::middleware(['preventBackHistory'])->group(function () {
-        Route::middleware(['cekRole:pengambil'])->group(function () {
+        Route::middleware(['cekRole:Pengambil'])->group(function () {
             Route::get('/dashboard/pengambil', [PageController::class, 'dashboardPengambil']);
         });
         Route::middleware(['cekRole:pemilik'])->group(function () {
             Route::get('/dashboard/pemilik', [PageController::class, 'dashboardPemilik']);
         });
-        Route::middleware(['cekRole:bank'])->group(function () {
+        Route::middleware(['cekRole:Bank'])->group(function () {
             Route::get('/dashboard/bank', [BankController::class, 'dashboard']);
         });
 

@@ -18,7 +18,9 @@ class CreateUsersTable extends Migration
             $table->string('username');
             $table->string('email');
             $table->string('password');
-	        $table->string('role');
+	        $table->enum('role',['Pemilik','Pengambil','Bank'])->default('Pemilik');
+            $table->rememberToken();
+            $table->timestamps();
         });
     }
 

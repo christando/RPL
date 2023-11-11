@@ -27,7 +27,7 @@ class PageController extends Controller
             'password'=>bcrypt($request->password),
             'role'=>$request->role,
         ]);
-        return redirect("/dashboard");
+        return redirect("/login");
     }
     public function dashboardPengambil()
     {

@@ -49,9 +49,9 @@
                                 </div>
                                 <div class="form-group">
                                   <select class="form-control form-control-lg" id="role" name="role">
-                                      <option value="Pemilik Rumahan">Pemilik Rumahan</option>
-                                      <option value="Pengambil Sampah">Pengambil Sampah</option>
-                                      <option value="Bank Sampah">Bank Sampah</option>
+                                      <option value="Pemilik">Pemilik Rumahan</option>
+                                      <option value="Pengambil">Pengambil Sampah</option>
+                                      <option value="Bank">Bank Sampah</option>
                                   </select>
                               </div>
                                 <div class="mt-3">
