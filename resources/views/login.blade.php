@@ -31,7 +31,7 @@
                             <div class="brand-logo">
                                 <img src="{{ asset('images/luna-icon.svg') }}" alt="logo" />
                             </div>
-                            <h4>Hello! let's get started</h4>
+                            <h4>Hello! Let's get started</h4>
                             <h6 class="font-weight-light">Sign in to continue.</h6>
                             @if ($errors->any())
                                 <div class="alert alert-danger">
@@ -71,6 +71,7 @@
                             <script src="../../js/settings.js"></script>
                             <script src="../../js/todolist.js"></script>
                             <!-- endinject -->
+
 </body>
 
 </html>
