@@ -33,17 +33,17 @@ class authController extends Controller
         ];
 
         if(Auth::attempt($datalogin)){
-            //hak akses
-            // if(Auth::user()->role == 'Pemilik Rumahan'){
-            //     return redirect('/dashboard/pemilik');
-            // }
-            // elseif(Auth::user()->role == 'pengambil Sampah'){
-            //     return redirect('/dashboard/pengambil');
-            // }
-            // elseif(Auth::user()->role == 'bank'){
-            //     return redirect('/dashboard/bank');
-            // }
-            return redirect('/dashboard/pemilik');
+            // hak akses
+            if(Auth::user()->role == 'Pemilik'){
+                return redirect('/dashboard/pemilik');
+            }
+            elseif(Auth::user()->role == 'pengambil'){
+                return redirect('/dashboard/pengambil');
+            }
+            elseif(Auth::user()->role == 'Bank'){
+                return redirect('/dashboard/bank');
+            }
+
         }
         else{
 
