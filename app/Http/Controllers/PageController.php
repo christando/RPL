@@ -30,7 +30,7 @@ class PageController extends Controller
     
     public function dashboardBank()
     {
-        return view("dashboarad_bank");
+        return view("dashboard_bank");
     }
     
 }
