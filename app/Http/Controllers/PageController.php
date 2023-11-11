@@ -11,32 +11,37 @@ class PageController extends Controller
     {
         return view("home");
     }
-    public function login()
-    {
-        return view("login");
-    }
+    // public function login()
+    // {
+    //     return view("login");
+    // }
     public function register()
     {
         return view("register");
     }
     public function post_register(Request $request)
     {
-        User::created($request->user());
+        User::create([
+            'username'=>$request->username,
+            'email'=>$request->email,
+            'password'=>bcrypt($request->password),
+            'role'=>$request->role,
+        ]);
         return redirect("/dashboard");
     }
     public function dashboardPengambil()
     {
         return view("dashboard_pengambil");
     }
-    
+
     public function dashboardPemilik()
     {
         return view("dashboard_pemilik");
     }
-    
+
     public function dashboardBank()
     {
-        return view("dashboard_bank");
+        return view("dashboarad_bank");
     }
-    
+
 }
