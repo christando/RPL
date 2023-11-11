@@ -21,6 +21,7 @@
 </head>
 
 <body style="background-image: url{{ asset('images/luna-icon.svg') }}">
+
     <div class="container-scroller">
         <div class="container-fluid page-body-wrapper full-page-wrapper">
             <div class="content-wrapper d-flex align-items-center auth px-0">
@@ -51,12 +52,9 @@
                             </form>
                         </div>
                     </div>
+
                 </div>
-            </div>
-            <!-- content-wrapper ends -->
-        </div>
-        <!-- page-body-wrapper ends -->
-    </div>
+              </form>
     <!-- container-scroller -->
     <!-- plugins:js -->
     <script src="../../vendors/js/vendor.bundle.base.js"></script>
