@@ -43,19 +43,22 @@
                                 </div>
                             @endif
 
-                            <form class="pt-3" action="/login" method="POST">
+                            <form class="pt-3" action="/cek_login" method="POST">
                                 @csrf
                                 <div class="form-group">
                                     <input type="email" name="email" class="form-control form-control-lg"
-                                        id="exampleInputEmail1" placeholder="Email">
+                                        id="email" placeholder="Email">
                                 </div>
                                 <div class="form-group">
                                     <input type="password" name="password" class="form-control form-control-lg"
-                                        id="exampleInputPassword1" placeholder="Password">
+                                        id="password" placeholder="Password">
                                 </div>
                                 <div class="mt-3">
                                     <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn"
                                         type="submit">SIGN IN</button>
+                                </div>
+                                <div class="text-center mt-4 font-weight-light">
+                                    Don't have an account? <a href="/register" class="text-primary">Create</a>
                                 </div>
                             </form>
                             <!-- container-scroller -->

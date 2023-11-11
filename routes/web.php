@@ -22,17 +22,16 @@ use App\Http\Controllers\BankController;
 //     return view('welcome');
 // });
 
-// Contoh Route di Laravel 8
-// Route::get('/Home', [PageController::class, 'home']);
+
 
 
 
 Route::middleware(['guest'])->group(function () {
     Route::get('/', [PageController::class, 'home']);
-    Route::get('/login', [PageController::class, 'login'])-> name('login');
-    Route::post('/login', [AuthController::class, 'validateLogin']);
+    Route::get('/login', [AuthController::class, 'login'])-> name('login');
+    Route::post('/cek_login', [AuthController::class, 'validateLogin']);
     Route::get('/register', [PageController::class, 'register']);
-    Route::post('/register', [PageController::class, 'post_register']);
+    Route::post('/register_post', [PageController::class, 'post_register']);
 });
 
 Route::middleware(['auth'])->group(function () {
@@ -46,8 +45,8 @@ Route::middleware(['auth'])->group(function () {
         Route::middleware(['cekRole:bank'])->group(function () {
             Route::get('/dashboard/bank', [BankController::class, 'dashboard']);
         });
-       
-  
+
+
 
     //logout
     Route::get('/logout',[authController::class, 'logout']);

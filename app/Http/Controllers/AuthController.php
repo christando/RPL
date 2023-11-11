@@ -5,12 +5,17 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+
 class authController extends Controller
 {
 
     // view
     public function login(){
         return view('login');
+    }
+    public function register()
+    {
+        return view("register");
     }
 
     // validate
@@ -26,19 +31,22 @@ class authController extends Controller
             'email' => $request -> email,
             'password' => $request -> password,
         ];
+
         if(Auth::attempt($datalogin)){
             //hak akses
-            if(Auth::user()->role == 'pemilik'){
-                return redirect('/dashboard/pemilik');
-            }
-            elseif(Auth::user()->role == 'pengambil'){
-                return redirect('/dashboard/pengambil');
-            }
-            elseif(Auth::user()->role == 'bank'){
-                return redirect('/dashboard/bank');
-            }
+            // if(Auth::user()->role == 'Pemilik Rumahan'){
+            //     return redirect('/dashboard/pemilik');
+            // }
+            // elseif(Auth::user()->role == 'pengambil Sampah'){
+            //     return redirect('/dashboard/pengambil');
+            // }
+            // elseif(Auth::user()->role == 'bank'){
+            //     return redirect('/dashboard/bank');
+            // }
+            return redirect('/dashboard/pemilik');
         }
         else{
+
             return redirect('/login')->withErrors('Email atau Password tidak sesuai!');
         }
     }
