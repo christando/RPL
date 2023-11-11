@@ -32,7 +32,8 @@
               </div>
               <h4>New here?</h4>
               <h6 class="font-weight-light">Signing up is easy. It only takes a few steps</h6>
-              <form class="pt-3" method="POST">
+              <form class="pt-3" action="/dashboard" method="POST">
+                @csrf
                 <div class="form-group">
                   <input type="text" class="form-control form-control-lg" id="exampleInputUsername1" placeholder="Username">
                 </div>
@@ -57,7 +58,7 @@
                   </div>
                 </div>
                 <div class="mt-3">
-                  <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="/dashboard">SIGN UP</a>
+                  <input class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" type="submit">SIGN UP</input>
                 </div>
                 <div class="text-center mt-4 font-weight-light">
                   Already have an account? <a href="/login" class="text-primary">Login</a>

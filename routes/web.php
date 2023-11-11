@@ -30,6 +30,7 @@ Route::middleware(['guest'])->group(function () {
     Route::get('/', [PageController::class, 'home']);
     Route::get('/login', [PageController::class, 'login']);
     Route::get('/register', [PageController::class, 'register']);
+    Route::post('/register', [PageController::class, 'post_register']);
 });
 
 Route::middleware(['auth'])->group(function () {

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class PageController extends Controller
 {
@@ -17,6 +18,11 @@ class PageController extends Controller
     public function register()
     {
         return view("register");
+    }
+    public function post_register(Request $request)
+    {
+        User::created($request->user());
+        return redirect("/dashboard");
     }
     public function dashboardPengambil()
     {
