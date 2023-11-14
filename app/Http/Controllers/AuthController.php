@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 
-class authController extends Controller
+class AuthController extends Controller
 {
 
     // view
@@ -30,14 +30,17 @@ class authController extends Controller
         $datalogin = [
             'email' => $request -> email,
             'password' => $request -> password,
+            
         ];
+    // return redirect('/dashboard/pemilik');
+        
 
         if(Auth::attempt($datalogin)){
             // hak akses
             if(Auth::user()->role == 'Pemilik'){
                 return redirect('/dashboard/pemilik');
             }
-            elseif(Auth::user()->role == 'pengambil'){
+            elseif(Auth::user()->role == 'Pengambil'){
                 return redirect('/dashboard/pengambil');
             }
             elseif(Auth::user()->role == 'Bank'){

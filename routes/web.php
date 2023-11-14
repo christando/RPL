@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\LocationController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\BankController;
@@ -23,8 +24,10 @@ use App\Http\Controllers\BankController;
 // });
 
 
-
-
+Route::get('/locations', [LocationController::class, 'index']);
+// Route::get('/dashboard/pengambil', [PageController::class, 'dashboardPengambil']);
+// Route::get('/dashboard/pemilik', [PageController::class, 'dashboardPemilik']);
+// Route::get('/dashboard/bank', [BankController::class, 'dashboardBank']);
 
 Route::middleware(['guest'])->group(function () {
     Route::get('/', [PageController::class, 'home']);
@@ -39,11 +42,11 @@ Route::middleware(['auth'])->group(function () {
         Route::middleware(['cekRole:Pengambil'])->group(function () {
             Route::get('/dashboard/pengambil', [PageController::class, 'dashboardPengambil']);
         });
-        Route::middleware(['cekRole:pemilik'])->group(function () {
+        Route::middleware(['cekRole:Pemilik'])->group(function () {
             Route::get('/dashboard/pemilik', [PageController::class, 'dashboardPemilik']);
         });
         Route::middleware(['cekRole:Bank'])->group(function () {
-            Route::get('/dashboard/bank', [BankController::class, 'dashboard']);
+            Route::get('/dashboard/bank', [BankController::class, 'dashboardBank']);
         });
 
 
@@ -52,4 +55,5 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/logout',[authController::class, 'logout']);
     });
 });
+// Route::get('/dashboard/pemilik', [PageController::class, 'dashboardPemilik']);
 
